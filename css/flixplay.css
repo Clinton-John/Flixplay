@@ -75,6 +75,29 @@
         background-color: #272525;
         padding: 5px 10px;
     }
+    
+    .left-body2-nav3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    .left-body2-nav3 img {
+        width: 30px;
+    }
+    
+    #recents-select {
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        background-color: #272525;
+        padding-left: 10px;
+    }
+    
+    #recents-select option {
+        cursor: pointer;
+    }
     /* the right body part */
     
     .right-body {
@@ -247,15 +270,44 @@
     .copyright {
         width: 30px;
         height: 30px;
-        background-image: url();
+        background-image: url("../spotifyimages/copyright.png");
     }
     
     .footer-nav2 {
         margin: 5px;
         display: flex;
     }
+    /* The phone footer section    */
     
-    .copy @media (max-width:600px) {
+    .phone-footer {
+        visibility: hidden;
+    }
+    
+    .nav-down {
+        visibility: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        background-color: #a1a098;
+    }
+    
+    .nav-down a {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-right: 15px;
+        color: #fff;
+    }
+    
+    .nav-down a img {
+        width: 20px;
+    }
+    
+    @media (max-width:600px) {
         body {
             overflow-x: hidden;
         }
@@ -282,5 +334,8 @@
         .recent-container img {
             width: 50px;
             height: 50px;
+        }
+        .phone-footer {
+            visibility: visible;
         }
     }
