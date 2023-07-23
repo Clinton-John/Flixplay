@@ -135,6 +135,7 @@
         }
         
         .recent-section {
+            cursor: pointer;
             display: flex;
             flex-wrap: wrap;
         }
@@ -321,7 +322,7 @@
         .intro-page {
             display: flex;
             justify-content: space-between;
-            font-size: 25px;
+            font-size: 20px;
             padding: 10px;
             color: #fff;
         }
@@ -343,7 +344,6 @@
             height: 240px;
             overflow-x: hidden;
             display: flex;
-            overflow-x: hidden;
             background-color: #272525;
         }
         
@@ -369,7 +369,28 @@
             height: 150px;
             width: 150px;
             text-align: center;
-            background-color: aqua;
+            background-image: url("../spotifyimages/first13.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #image2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            background-image: url("../spotifyimages/first13.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #image1 {
+            background-image: url("../spotifyimages/first12.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         .avatar-about-image a {
@@ -397,7 +418,7 @@
             }
             .welcome {
                 margin-right: auto;
-                font-size: 30px;
+                font-size: 20px;
                 color: #ff0000;
             }
             .recent-container {
@@ -421,10 +442,23 @@
             #show-all {
                 visibility: hidden;
             }
+            .desktop-footer {
+                display: none;
+            }
             .image-container {
+                height: 220px;
                 overflow-x: auto;
                 white-space: nowrap;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
+            }
+            .container {
+                width: 160px;
+                height: 200px;
+                padding: 7px;
+                margin: 7px;
+                border-radius: 5px;
+            }
+            .avatar-image {
+                height: 120px;
+                width: 120px;
             }
         }

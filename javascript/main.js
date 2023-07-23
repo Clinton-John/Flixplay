@@ -21,3 +21,10 @@ newElement.appendChild(newcontent);
 getTimeBody.appendChild(newElement);
 newElement.setAttribute("class", "message");
 newElement.style.cssText = " position:top;"
+
+//the hover section of the playlists and the songs
+let getPlay = document.getElementsById("play");
+let getAfrikan = document.getElementById("afrikan");
+getPlay.addEventListener('mouseenter', function() {
+    getAfrikan.style.cssText = "color:green;";
+});
