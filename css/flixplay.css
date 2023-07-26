@@ -222,6 +222,7 @@
         #twitter {
             background-image: url(../spotifyimages/twitter.svg);
             background-position: center;
+            cursor: pointer;
             background-size: cover;
             background-size: 40%;
             background-repeat: no-repeat;
@@ -232,10 +233,12 @@
             background-position: center;
             background-size: cover;
             background-size: 40%;
+            cursor: pointer;
             background-repeat: no-repeat;
         }
         
         #instagram {
+            cursor: pointer;
             background-image: url(../spotifyimages/instagram.svg);
             background-position: center;
             background-size: cover;
@@ -272,6 +275,8 @@
             width: 30px;
             height: 30px;
             background-image: url("../spotifyimages/copyright.png");
+            background-repeat: no-repeat;
+            background-size: 60%;
         }
         
         .footer-nav2 {
