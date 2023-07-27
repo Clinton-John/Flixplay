@@ -8,13 +8,13 @@ if (currenthour >= 4 && currenthour <= 13) {
     createText = "Good morning:-)";
 } else if (currenthour > 13 && currenthour <= 17) {
     createText = "Good Afternoon";
-} else if (currenthour > 17 && currenthour <= 21) {
+} else if (currenthour > 18 && currenthour <= 21) {
     createText = "Good evening";
 } else if (currenthour > 21) {
     createText = "Good evening :)";
 
 } else {
-    createText = "Late night vibes";
+    createText = "Good evening";
 }
 let newcontent = document.createTextNode(createText);
 newElement.appendChild(newcontent);
