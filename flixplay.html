@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flixplay</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/desktopStyle.css">
     <link rel="stylesheet" href="css/flixplay.css">
 </head>
 
@@ -20,7 +21,7 @@
                 <div class="left-body2">
                     <nav class="left-body2-nav">
                         <div>
-                            <a href="#"><img src="spotifyimages/libraryicon.png" alt="your library flixplay"> Your Library</a>
+                            <a href="#"><img src="spotifyimages/libraryicon.png" onclick="change_library_width()" alt="your library flixplay"> Your Library</a>
                         </div>
                         <div>
                             <img src="spotifyimages/arrow.png" alt="#">
@@ -53,7 +54,7 @@
                 <nav class="nav-down">
                     <a href="flixplay.html"><img src="spotifyimages/home.png">Home</a>
                     <a href="#"><img src="spotifyimages/searchicon.png">Search</a>
-                    <a href="#"><img src="spotifyimages/libraryicon.png">Your Library</a>
+                    <a href="library.html"><img src="spotifyimages/libraryicon.png">Your Library</a>
                     <a href="#" onclick="spotifyPremium()"><img src="spotifyimages/flixplaylogo.png">Premium</a>
 
                 </nav>
@@ -70,11 +71,11 @@
                 </nav>
                 <div class="recent-section">
                     <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first20.jpg" alt="">
-                            <p>Darknet Diaries</p>
+                        <a href="#"><img src="spotifyimages/first20.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg')" alt="">
+                            <p id="box-content">Darknet Diaries</p>
                     </div>
                     <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first12.jpg" alt="">
+                        <a href="#"><img src="spotifyimages/first12.jpg" onclick="Manager.changer('spotifyimages/first12.jpg')">
                             <p>48 Hours</p>
                     </div>
                     <div class="recent-container">
@@ -363,11 +364,26 @@
             </div>
         </div>
         <div class="desktop-footer">
-            the footer section containing the currently playing section
+            <div class="desktop-footer1">
+                <div class="playing-image"></div>
+                <div class="playing-description"> Sorted section</div>
+            </div>
+            <div class="desktop-footer2">
+                <div class="controllers">
+                    <a href="#"><img src="spotifyimages/shuffle.png" alt="shuffle"></a>
+                    <a href="#"><img src="spotifyimages/play-button-arrowhead.png" alt="previous"></a>
+                    <a href="#"><img src="spotifyimages/play-button-arrowhead.png" alt="pause/play"></a>
+                    <a href="#"><img src="spotifyimages/play-button-arrowhead.png" alt="next"></a>
+                    <a href="#"><img src="spotifyimages/loop.png" alt="repeat"></a>
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="desktop-footer3">furthest end</div>
         </div>
     </div>
 
 </body>
 <script src="javascript/main.js"></script>
+<script src="javascript/player.js"></script>
 
 </html>

@@ -324,16 +324,6 @@
         .nav-down a img {
             width: 20px;
         }
-        /* the desktop footer section */
-        
-        .desktop-footer {
-            width: 100%;
-            height: 12vh;
-            background-color: #111;
-            position: fixed;
-            color: #fff;
-            bottom: 0;
-        }
         /* the body images and the song sessions */
         
         .intro-page {

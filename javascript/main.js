@@ -28,3 +28,12 @@ let getAfrikan = document.getElementById("afrikan");
 getPlay.addEventListener('mouseenter', function() {
     getAfrikan.style.cssText = "color:green;";
 });
+
+
+// expanding the library section when clicked
+
+function change_library_width() {
+    let leftBody = document.querySelector(".left_body");
+
+    leftBody.style.cssText = "width: 25%; visibility:hidden;";
+}
