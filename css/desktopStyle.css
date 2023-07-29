@@ -38,15 +38,20 @@
 
 .desktop-footer2 {
     display: block;
-    width: 350px;
+    width: 380px;
 }
 
 .controllers {
     display: inline-block;
     align-items: center;
     text-align: center;
+    cursor: pointer;
     display: flex;
     justify-content: center;
+}
+
+.controllers a {
+    margin-right: 5px;
 }
 
 .controllers img {
@@ -54,8 +59,21 @@
 }
 
 .progress-bar {
-    height: 10px;
+    height: 6px;
     border-radius: 5px;
-    width: 300px;
+    width: 350px;
     background-color: #808080;
+}
+
+.desktop-footer3 {
+    display: inline-block;
+}
+
+.desktop-footer3 img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.desktop-footer3 a {
+    margin: 5px;
 }

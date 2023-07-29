@@ -24,8 +24,8 @@
                             <a href="#"><img src="spotifyimages/libraryicon.png" onclick="change_library_width()" alt="your library flixplay"> Your Library</a>
                         </div>
                         <div>
-                            <img src="spotifyimages/arrow.png" alt="#">
-                            <img src="spotifyimages/arrow.png" alt="#">
+                            <img src="spotifyimages/right-arrow.png" alt="#">
+                            <img src="spotifyimages/plus.png" alt="#">
 
                         </div>
                     </nav>
@@ -71,16 +71,16 @@
                 </nav>
                 <div class="recent-section">
                     <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first20.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg')" alt="">
-                            <p id="box-content">Darknet Diaries</p>
+                        <a href="#"><img src="spotifyimages/first20.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Darknet Diaries' )" alt="">
+                            <p>Darknet Diaries</p>
                     </div>
                     <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first12.jpg" onclick="Manager.changer('spotifyimages/first12.jpg')">
+                        <a href="#"><img src="spotifyimages/first12.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first12.jpg','48 Hours')">
                             <p>48 Hours</p>
                     </div>
                     <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first13.jpg" alt="">
-                            <p id="afrikan">Afrikan Sauce</p>
+                        <a href="#"><img src="spotifyimages/first13.jpg" alt="" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Afrikan Sauce' )">
+                            <p>Afrikan Sauce</p>
                     </div>
                     <div class="recent-container">
                         <a href="#"><img src="spotifyimages/first12.jpg" alt="">
@@ -366,19 +366,26 @@
         <div class="desktop-footer">
             <div class="desktop-footer1">
                 <div class="playing-image"></div>
-                <div class="playing-description"> Sorted section</div>
+                <div class="playing-description"> </div>
             </div>
             <div class="desktop-footer2">
                 <div class="controllers">
                     <a href="#"><img src="spotifyimages/shuffle.png" alt="shuffle"></a>
-                    <a href="#"><img src="spotifyimages/play-button-arrowhead.png" alt="previous"></a>
-                    <a href="#"><img src="spotifyimages/play-button-arrowhead.png" alt="pause/play"></a>
-                    <a href="#"><img src="spotifyimages/play-button-arrowhead.png" alt="next"></a>
+                    <a href="#"><img src="spotifyimages/previous.png" alt="previous"></a>
+                    <a href="#"><img src="spotifyimages/pause.png" alt="pause/play" id="pause" onclick="pauseManage()"></a>
+                    <a href="#"><img src="spotifyimages/next-button.png" alt="next"></a>
                     <a href="#"><img src="spotifyimages/loop.png" alt="repeat"></a>
                 </div>
-                <div class="progress-bar"></div>
+                <div class="progress-bar">
+                    <div class="progress-container"></div>
+                </div>
+
             </div>
-            <div class="desktop-footer3">furthest end</div>
+            <div class="desktop-footer3">
+                <a href="#"><img src="spotifyimages/paper.png" alt="queue"></a>
+                <a href="#"><img src="spotifyimages/devices.png" alt="connect to a device"></a>
+                <a href="#"><img src="spotifyimages/volume.png" alt="mute"></a>
+            </div>
         </div>
     </div>
 
