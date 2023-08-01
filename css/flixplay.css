@@ -409,6 +409,13 @@
             color: #fff;
             opacity: 0.5;
         }
+        /* the dynamic picked for you section */
+        
+        .picked-for-you {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
         /* the responsiveness section  */
         
         @media (max-width:600px) {

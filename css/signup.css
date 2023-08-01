@@ -9,17 +9,17 @@ body {
 .wrapper {
     position: relative;
     border-radius: 12px;
-    max-width: 470px;
+    max-width: 450px;
     width: 100%;
-    padding: 20px 30px 120px;
+    padding: 20px 20px 50px;
     background: #4070f4;
 }
 
 .form_signup header,
 .form_login header {
     text-align: center;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -27,11 +27,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 form input {
-    height: 50px;
+    height: 40px;
     padding: 0 15px;
     border: none;
     outline: none;
@@ -81,6 +81,13 @@ form a:hover {
     text-decoration: underline;
     color: #0000ff;
 }
+
+.forgot-password {
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+@media (max-width:600px) {}
 
 
 /* .form_login {

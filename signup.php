@@ -1,3 +1,13 @@
+
+<?php
+
+require_once "includes/config_session.inc.php";
+require_once "includes/signup_model.inc.php";
+require_once "includes/signup_view.inc.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +23,7 @@
     <section class="wrapper">
         <div class="form_signup">
             <header>Signup</header>
-            <form action="#">
+            <form action="includes/signup.inc.php" method="post">
                 <input type="text" name="username" placeholder="Username">
                 <input type="email" name="email" placeholder="email">
                 <input type="password" name="password" placeholder="Enter password">
@@ -28,11 +38,11 @@
 
         <div class="form_login">
             <header>Login</header>
-            <form action="#">
+            <form action="includes/signup.inc.ph" method="post">
                 <input type="text" name="username" placeholder="Username">
 
                 <input type="password" name="password" placeholder="Enter password">
-                <a href="#">Forgot password?</a>
+                <a href="#" id="forgot-password">Forgot password?</a>
                 <input type="submit" value="Login">
 
             </form>
