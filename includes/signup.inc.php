@@ -13,14 +13,14 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
         // ERROR HANDLER
         $errors=[];
       if (is_input_empty($username,$pwd,$email)) {
-         $errors["empty_input"] = "the fields must be filled!";
+         $errors["empty_input"] = "All the fields must be filled!";
        }
        if (is_email_invalid($email) ) {
         $errors["invalid_email"] = "please enter a valid email";
        
        }   
        if (is_username_taken($pdo,$username) ) {
-        $errors["username_taken"] = "the username you entered is taken";
+        $errors["username_taken"] = "The username is already assigned to another user";
        
        }   
        if (is_email_taken($pdo, $email) ) {
@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
        }
 
        require_once 'config_session.inc.php';
-       if ($errors) {
+       if ($errors) { //if there exists an error then set a session error
         $_SESSION["errors_signup"]= $errors;
 
             // adding a feature  to improve the interaction of the website such that when an error is displayed, the user data will still be shown in the input field and only the prompet error will be repeated.
@@ -39,8 +39,7 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
               'email' => $email,
             ];
         $_SESSION["signup_data"]= $signupData;
-
-        header("location: ../flixplay.html");
+        header("location: ../signup.php");
         die();// stops the other codes from running after the errors have been displayed
        }
         

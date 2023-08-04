@@ -88,8 +88,9 @@ form a:hover {
 }
 
 #error {
-    color: red;
-    font-size: 30px;
+    width: 100%;
+    color: #111;
+    height: 10px;
 }
 
 @media (max-width:600px) {}

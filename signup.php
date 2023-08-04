@@ -24,14 +24,22 @@ require_once "includes/errorhandler.inc.php"
         <div class="form_signup">
             <header>Signup</header>
             <form action="includes/signup.inc.php" method="post">
-                <input type="text" name="username" placeholder="Username">
-                <input type="email" name="email" placeholder="email">
-                <input type="password" name="password" placeholder="Enter password">
+                
+                <!-- <input type="text" name="username" placeholder="Username" >
+                <input type="email" name="email" placeholder="email" >
+                <input type="password" name="password" placeholder="Enter password"> -->
+                <?php
+                  signup_inputs();
+                 ?>
                 <div class="checkbox">
                     <input type="checkbox" id="signupcheckbox">
                     <label for="signupcheckbox">I have read and accepted the terms and conditions.</label>
                 </div>
                 <input type="submit" value="Signup">
+                <?php
+                  check_signup_errors();
+                 ?>
+                
 
             </form>
         </div>

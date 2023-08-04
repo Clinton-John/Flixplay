@@ -4,9 +4,9 @@ let newElement = document.createElement("h1");
 let date = new Date();
 let currenthour = date.getHours();
 let createText;
-if (currenthour >= 4 && currenthour <= 13) {
+if (currenthour >= 4 && currenthour < 12) {
     createText = "Good morning:-)";
-} else if (currenthour > 13 && currenthour <= 17) {
+} else if (currenthour > 12 && currenthour <= 17) {
     createText = "Good Afternoon";
 } else if (currenthour > 18 && currenthour <= 21) {
     createText = "Good evening";
@@ -38,5 +38,4 @@ function change_library_width() {
     leftBody.style.cssText = "width: 25%; visibility:hidden;";
 }
 
-// toggle picked for you section with all the suggestions 
-
+// toggle picked for you section with all the suggestions
