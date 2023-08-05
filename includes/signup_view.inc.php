@@ -3,25 +3,19 @@
 declare(strict_types=1);
 
 function signup_inputs(){
-    // <input type="text" name="username" placeholder="Username">
-    // <input type="email" name="email" placeholder="email">
-    // 
-    // <input type="password" name="password" placeholder="Enter password"><div class="checkbox">
-    //     <input type="checkbox" id="signupcheckbox">
-    //     <label for="signupcheckbox">I have read and accepted the terms and conditions.</label>
-    // </div>$_SESSION["signup_data"]["username"]
+   
     if (isset($_SESSION["signup_data"]["username"]) && !isset($_SESSION["erros_signup"]["username_taken"]) ) {
     
     echo '<input type="text" name="username" placeholder="Username" value="' . $_SESSION["signup_data"]["username"] .'"> ';
     }else{
-    'echo <input type="text" name="username" placeholder="Username">';
+    echo '<input type="text" name="username" placeholder="Username">';
      
     }
     if (isset($_SESSION["signup_data"]["email"]) && !isset($_SESSION["erros_signup"]["email_taken"]) && !isset($_SESSION["erros_signup"]["invalid_email"]) ) {
      
         echo '<input type="email" name="email" placeholder="email" value="' . $_SESSION["signup_data"]["email"] .'"> ';
         }else{
-        'echo <input type="text" name="username" placeholder="Username">';
+        echo '<input type="text" name="username" placeholder="Username">';
          
         }
     echo '<input type="password" name="password" placeholder="Enter password">'; 
@@ -32,7 +26,7 @@ function check_signup_errors(){
     if (isset($_SESSION["errors_signup"])) {
        $errors = $_SESSION["errors_signup"];
   
-    //    echo "<br>";
+        echo "<br>";
        
        foreach($errors as $error){
         echo '<p id="error">'. $error. "</p>";

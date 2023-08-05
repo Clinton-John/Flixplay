@@ -101,7 +101,8 @@
         /* the right body part */
         
         .right-body {
-            width: 75%;
+            width: 50%;
+            /*to be changed after setting up the section */
             height: 85vh;
             border-radius: 8px;
             background-color: #201f1f;
@@ -477,5 +478,10 @@
             .avatar-image {
                 height: 120px;
                 width: 120px;
+            }
+            .last-section {
+                visibility: hidden;
+                width: 0;
+                margin: 0;
             }
         }

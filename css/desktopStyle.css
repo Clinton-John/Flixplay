@@ -77,3 +77,81 @@
 .desktop-footer3 a {
     margin: 5px;
 }
+
+
+/* the library section containing the playlist and the liked songs */
+
+.playlist-container {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.playlist-image {
+    cursor: pointer;
+    background-color: #0000ff;
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+#liked-image {
+    cursor: pointer;
+    background-image: url("../spotifyimages/first13.jpg");
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.playlist-name {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-left: 5px;
+}
+
+
+/* the toggled right section displaying all the songs in the playlist */
+
+.last-section {
+    width: 25%;
+    margin-left: 10px;
+    background-color: #201f1f;
+    height: 85vh;
+    border-radius: 8px;
+    overflow-y: auto;
+    margin-right: 10px;
+}
+
+.top-last-section {
+    width: 100%;
+    height: 40px;
+    padding-right: 15px;
+}
+
+#back-image {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url("../spotifyimages/backarrow.png");
+    background-color: #0000ff;
+}
+
+.starting-part {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #3498db, #8e44ad);
+}

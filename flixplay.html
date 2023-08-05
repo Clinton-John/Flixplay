@@ -48,6 +48,20 @@
                         </select>
                         </div>
                     </nav>
+                    <div class="playlist-recents">
+                        <div class="playlist-container">
+                            <div class="playlist-image" id="liked-image" onclick="LibraryManager.overallManager()"></div>
+                            <div class="playlist-name"><a href="#">Liked songs</a></div>
+                        </div>
+                        <div class="playlist-container">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-name">Playlist 1</div>
+                        </div>
+                        <div class="playlist-container">
+                            <div class="playlist-image"></div>
+                            <div class="playlist-name">Playlist 2</div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -65,7 +79,7 @@
                 <nav class="nav-top">
                     <div class="welcome"></div>
                     <div class="nav-container">
-                        <a href="signup.php" id="login_button">Login/Signup</a>
+                        <!-- <a href="signup.php" id="login_button">Login/Signup</a> -->
                         <a href="#"> <img src="spotifyimages/notificationicon.png" alt=""></a>
                         <a href="#"> <img src="spotifyimages/whiteprofile.png" alt="" style="background-color:none;"></a>
                         <a href="#"> <img src="spotifyimages/settings.png" alt="" onclick="toggleNav()"></a>
@@ -382,6 +396,16 @@
                 </footer>
 
             </div>
+            <div class="last-section">
+                <div class="starting-part">
+                    <nav class="top-last-section">
+                        <div id="back-image"></div>
+                        <!-- <img src="spotifyimages/backarrow" id="back-arrow" alt="back"> -->
+                    </nav>
+
+                </div>
+
+            </div>
         </div>
         <div class="desktop-footer">
             <div class="desktop-footer1">
@@ -412,5 +436,6 @@
 </body>
 <script src="javascript/main.js"></script>
 <script src="javascript/player.js"></script>
+<script src="javascript/playlists.js"></script>
 
 </html>
