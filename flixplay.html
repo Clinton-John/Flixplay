@@ -51,16 +51,35 @@
                     <div class="playlist-recents">
                         <div class="playlist-container">
                             <div class="playlist-image" id="liked-image" onclick="LibraryManager.overallManager()"></div>
-                            <div class="playlist-name"><a href="#">Liked songs</a></div>
+                            <div class="playlist-name">
+                                <p>Liked Songs</p>
+                                <p id="song-number">15 Songs</p>
+                            </div>
+                            <div class="playing-icon">
+                                <img src="spotifyimages/playing.png" alt="">
+                            </div>
                         </div>
                         <div class="playlist-container">
                             <div class="playlist-image"></div>
-                            <div class="playlist-name">Playlist 1</div>
+                            <div class="playlist-name">
+                                <p>Playlist 1</p>
+                                <p id="song-number"></p>
+                            </div>
+                            <div class="playing-icon">
+                                <img src="spotifyimages/playing.png" alt="">
+                            </div>
                         </div>
                         <div class="playlist-container">
                             <div class="playlist-image"></div>
-                            <div class="playlist-name">Playlist 2</div>
+                            <div class="playlist-name">
+                                <p>Playlist 2</p>
+                                <p id="song-number"></p>
+                            </div>
+                            <div class="playing-icon">
+                                <img src="spotifyimages/playing.png" alt="">
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -402,7 +421,43 @@
                         <div id="back-image"></div>
                         <!-- <img src="spotifyimages/backarrow" id="back-arrow" alt="back"> -->
                     </nav>
+                    <form action="#" id="playlist-search">
+                        <input type="text" name="search-liked" placeholder="Find in liked songs" id="search-liked">
+                        <button type="submit" id="search-button">Search</button>
+                    </form>
+                    <div class="playlist-description"> Liked Songs</div>
+                    <nav class="playlist-nav-bar">
+                        <div class="sort-playlist"><img src="spotifyimages/download.png" alt="" id="download-playlist"></div>
+                        <div class="play-shuffle">
+                            <img src="spotifyimages/shuffle.png" alt="">
+                            <img src="spotifyimages/play-button-arrowhead.png" alt="">
+                        </div>
+                    </nav>
+                </div>
+                <div class="songs-part">
+                    <div class="song-container">
+                        <div class="song-image"></div>
+                        <div class="song-description">
+                            <p id="song-name"></p>
+                            <p id="artist-name"></p>
+                        </div>
+                        <div class="song-like-options">
+                            <img src="spotifyimages/likebutton.png" alt="click ">
+                            <img src="spotifyimages/options.png" alt=" options ">
+                        </div>
+                    </div>
 
+                    <div class="song-container">
+                        <div class="song-image"></div>
+                        <div class="song-description">
+                            <p id="song-name"></p>
+                            <p id="artist-name"></p>
+                        </div>
+                        <div class="song-like-options">
+                            <img src="spotifyimages/likebutton.png" alt="click ">
+                            <img src="spotifyimages/options.png" alt=" options ">
+                        </div>
+                    </div>
                 </div>
 
             </div>
