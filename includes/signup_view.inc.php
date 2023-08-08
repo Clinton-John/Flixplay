@@ -15,7 +15,7 @@ function signup_inputs(){
      
         echo '<input type="email" name="email" placeholder="email" value="' . $_SESSION["signup_data"]["email"] .'"> ';
         }else{
-        echo '<input type="text" name="username" placeholder="Username">';
+        echo '<input type="email" name="email" placeholder="email">';
          
         }
     echo '<input type="password" name="password" placeholder="Enter password">'; 

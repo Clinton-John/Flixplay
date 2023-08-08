@@ -1,10 +1,12 @@
 
 <?php
 
-require_once "includes/config_session.inc.php";
 require_once "includes/signup_model.inc.php";
 require_once "includes/signup_view.inc.php";
-require_once "includes/errorhandler.inc.php"
+require_once "includes/errorhandler.inc.php";
+require_once "includes/login_control.inc.php";
+require_once "includes/login_view.inc.php";
+
 ?>
 
 
@@ -14,7 +16,7 @@ require_once "includes/errorhandler.inc.php"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup / login</title>
+    <title>signup/login</title>
     <link rel="stylesheet" href="css/signup.css">
 </head>
 
@@ -46,14 +48,16 @@ require_once "includes/errorhandler.inc.php"
 
         <div class="form_login">
             <header>Login</header>
-            <form action="includes/signup.inc.ph" method="post">
+            <form action="includes/login.inc.php" method="post">
                 <input type="text" name="username" placeholder="Username">
 
                 <input type="password" name="password" placeholder="Enter password">
                 <a href="#" id="forgot-password">Forgot password?</a>
                 <input type="submit" value="Login">
-
             </form>
+            <?php
+               check_login_errors();
+            ?>
         </div>
     </section>
 
