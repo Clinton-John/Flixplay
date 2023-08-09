@@ -1,10 +1,9 @@
 
 <?php
 
+require_once "includes/config_session.inc.php";
 require_once "includes/signup_model.inc.php";
 require_once "includes/signup_view.inc.php";
-require_once "includes/errorhandler.inc.php";
-require_once "includes/login_control.inc.php";
 require_once "includes/login_view.inc.php";
 
 ?>
@@ -23,13 +22,20 @@ require_once "includes/login_view.inc.php";
 <body>
 
     <section class="wrapper">
+        <h3>
+            <?php
+            output_username();
+            ?>
+        </h3>
         <div class="form_signup">
             <header>Signup</header>
+            
             <form action="includes/signup.inc.php" method="post">
                 
                 <!-- <input type="text" name="username" placeholder="Username" >
                 <input type="email" name="email" placeholder="email" >
                 <input type="password" name="password" placeholder="Enter password"> -->
+                
                 <?php
                   signup_inputs();
                  ?>
@@ -48,17 +54,26 @@ require_once "includes/login_view.inc.php";
 
         <div class="form_login">
             <header>Login</header>
+            <?php
+               check_login_errors();
+                ?>
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="username" placeholder="Username">
 
                 <input type="password" name="password" placeholder="Enter password">
                 <a href="#" id="forgot-password">Forgot password?</a>
+                <!-- <?php
+               check_login_errors();
+                ?> -->
                 <input type="submit" value="Login">
             </form>
-            <?php
-               check_login_errors();
-            ?>
+            
         </div>
+
+            <form action="includes/logout.inc.php" method="post">
+                
+                <input type="submit" value="Logout">
+            </form>
     </section>
 
 </body>

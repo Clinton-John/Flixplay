@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $errors["empty_input"] = "All the fields must be filled!";
           }
           
-          $result = get_user($pdo, $username); // the variable contains the user details that is returned when we try to grab the user
+          $result = get_user($pdo, $username); // the variable contains the the grabed user details
           if (is_username_wrong( $result)) {
             $errors["login_incorrect"] = "Invalid Login, please try again";
 
@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
           require_once 'config_session.inc.php';
           if ($errors) { //if there exists an error then set a session error
-           $_SESSION["errors_login"]= $errors;
+           $_SESSION["errors_login"] = $errors;
     
            header("location: ../signup.php");
            die();// stops the other codes from running after the errors have been displayed

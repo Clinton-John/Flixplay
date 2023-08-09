@@ -50,6 +50,6 @@ if (isset($_SESSION["user_id"])) {
     $userId = $_SESSION["user_id"];
     $newSessionId = session_create_id();
     $sessionId = $newSessionId ."_". $userId;//appending the user id to the session id 
-    session_id($sessionId);
+    // session_id($sessionId);
     $_SESSION["last-regeneration"]= time();
  }

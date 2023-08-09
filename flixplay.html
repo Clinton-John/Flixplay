@@ -1,3 +1,13 @@
+<!-- <?php
+require_once "includes/config_session.inc.php";
+require_once "includes/signup_model.inc.php";
+require_once "includes/signup_view.inc.php";
+require_once "includes/login_view.inc.php";
+
+
+?> -->
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +19,8 @@
     <link rel="shortcut icon" href="spotifyimages/playlogo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/desktopStyle.css">
+    <link rel="stylesheet" href="css/user_section.css">
+
     <link rel="stylesheet" href="css/flixplay.css">
 </head>
 
@@ -99,9 +111,24 @@
                     <div class="welcome"></div>
                     <div class="nav-container">
                         <a href="signup.php" id="login_button">Login/Signup</a>
+                        <!-- <a href="signup.php" id="login_button">
+                            <?php login_display() ?>
+                        </a> -->
                         <a href="#"> <img src="spotifyimages/notificationicon.png" alt=""></a>
-                        <a href="#"> <img src="spotifyimages/whiteprofile.png" alt="" style="background-color:none;"></a>
-                        <a href="#"> <img src="spotifyimages/settings.png" alt="" onclick="toggleNav()"></a>
+                        <div class="user-image-container">
+                            <img src="spotifyimages/whiteprofile.png" alt="Hover Image">
+                            <ul class="user-options">
+                                <li><a href="#" onclick="">Account</a></li>
+                                <li><a href="#" onclick="">Settings</a></li>
+                                <li><a href="#" onclick="">Upgrade to Premium</a></li>
+                                <li><a href="#" onclick="">Profile</a></li>
+                                <li><a href="#" onclick="">Log out</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div>
+                            <a href="#"> <img src="spotifyimages/whiteprofile.png" alt="" onclick="toggleNav()"></a>
+
+                        </div> -->
                     </div>
                 </nav>
                 <div class="recent-section">

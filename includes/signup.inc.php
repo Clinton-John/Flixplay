@@ -39,6 +39,7 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
               'email' => $email,
             ];
         $_SESSION["signup_data"]= $signupData;
+        
         header("location: ../signup.php");
         die();// stops the other codes from running after the errors have been displayed
        }
