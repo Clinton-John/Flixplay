@@ -37,3 +37,7 @@ function change_library_width() {
 
     leftBody.style.cssText = "width: 25%; visibility:hidden;";
 }
+
+function profileLoading() {
+
+}

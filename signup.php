@@ -70,10 +70,7 @@ require_once "includes/login_view.inc.php";
             
         </div>
 
-            <form action="includes/logout.inc.php" method="post">
-                
-                <input type="submit" value="Logout">
-            </form>
+            
     </section>
 
 </body>

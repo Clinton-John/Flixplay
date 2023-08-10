@@ -32,3 +32,14 @@ function login_display(){
          echo "";
      }
 }
+
+function logout_display(){
+    if (isset($_SESSION["user_id"])) {
+        echo '<input type="submit" value="Logout">';
+    } else {
+    
+    echo '<input type="submit" value="Login">';
+    }
+    
+
+}

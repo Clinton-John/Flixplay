@@ -44,13 +44,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
           $_SESSION["last-regeneration"]= time();
 
-          header("location: ../flixplay.html?login=success");
+          header("location: ../flixplay.php?login=success");
            $pdo = null;
           $stmt = null;
           die();
            
           create_user( $pdo,  $username,  $pwd , $email);
-           header("location: ../flixplay.html");
+           header("location: ../flixplay.php");
            die();
             
            $pdo = null;

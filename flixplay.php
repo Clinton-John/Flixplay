@@ -20,6 +20,7 @@ require_once "includes/login_view.inc.php";
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/desktopStyle.css">
     <link rel="stylesheet" href="css/user_section.css">
+    <link rel="stylesheet" href="css/account_profile.css">
 
     <link rel="stylesheet" href="css/flixplay.css">
 </head>
@@ -110,19 +111,32 @@ require_once "includes/login_view.inc.php";
                 <nav class="nav-top">
                     <div class="welcome"></div>
                     <div class="nav-container">
-                        <a href="signup.php" id="login_button">Login/Signup</a>
-                        <!-- <a href="signup.php" id="login_button">
+                        <!-- <a href="signup.php" id="login_button">Login/Signup</a> -->
+                        <a href="signup.php" id="login_button">
+
                             <?php login_display() ?>
-                        </a> -->
+                        </a>
                         <a href="#"> <img src="spotifyimages/notificationicon.png" alt=""></a>
                         <div class="user-image-container">
                             <img src="spotifyimages/whiteprofile.png" alt="Hover Image">
                             <ul class="user-options">
-                                <li><a href="#" onclick="">Account</a></li>
+                                <li><a href="#" onclick="profileLoading()">Profile</a></li>
                                 <li><a href="#" onclick="">Settings</a></li>
                                 <li><a href="#" onclick="">Upgrade to Premium</a></li>
                                 <li><a href="#" onclick="">Profile</a></li>
-                                <li><a href="#" onclick="">Log out</a></li>
+                                <li>
+                                    <a href="#" onclick="">
+                                        <form action="includes/logout.inc.php" method="post">
+
+                                            <?php 
+                                logout_display();
+                                ?>
+                                        </form>
+
+                                    </a>
+                                </li>
+
+                                <!-- <li><a href="#" onclick="">Log out</a></li> -->
                             </ul>
                         </div>
                         <!-- <div>
@@ -513,6 +527,18 @@ require_once "includes/login_view.inc.php";
                 <a href="#"><img src="spotifyimages/volume.png" alt="mute"></a>
             </div>
         </div>
+    </div>
+
+    <!-- the following section shows the sections not included in the html body but when toggled -->
+    <div class="dynamic-profile">
+        <div class="dynamic-profile1">
+            <div class="profile-image">the waalace iarnianaian cjjjwiorjwpoijcdi</div>
+            <div class="profile-name">nation state actor that is shown
+                <h1>destructive cuyber attack</h1>
+            </div>
+        </div>
+
+
     </div>
 
 </body>
