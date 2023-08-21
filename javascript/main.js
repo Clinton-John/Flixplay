@@ -39,5 +39,23 @@ function change_library_width() {
 }
 
 function profileLoading() {
+    const rightBody = document.querySelector(".content-right-body");
+    const dynamicProfile = document.querySelector(".dynamic-profile").innerHTML;
+
+    rightBody.innerHTML = dynamicProfile;
+}
+
+function returnRightBody() {
+
+
+    window.location.href = 'flixplay.html';
+    // const rightBody = document.querySelector(".content-right-body");
+    // const initialRightBody = rightBody.innerHTML;
+    // const dynamicProfile = document.querySelector(".dynamic-profile");
+
+    // rightBody.innerHTML = initialRightBody;
+
+    // const returnButton = document.querySelector("#returnButton");
+    // returnButton.style.color = "green";
 
 }

@@ -108,115 +108,72 @@ require_once "includes/login_view.inc.php";
                 </nav>
             </div>
             <div class="right-body">
-                <nav class="nav-top">
-                    <div class="welcome"></div>
-                    <div class="nav-container">
-                        <!-- <a href="signup.php" id="login_button">Login/Signup</a> -->
-                        <a href="signup.php" id="login_button">
+                <div class="content-right-body">
+                    <nav class="nav-top">
+                        <div class="welcome"></div>
+                        <div class="nav-container">
+                            <!-- <a href="signup.php" id="login_button">Login/Signup</a> -->
+                            <a href="signup.php" id="login_button">
 
-                            <?php login_display() ?>
-                        </a>
-                        <a href="#"> <img src="spotifyimages/notificationicon.png" alt=""></a>
-                        <div class="user-image-container">
-                            <img src="spotifyimages/whiteprofile.png" alt="Hover Image">
-                            <ul class="user-options">
-                                <li><a href="#" onclick="profileLoading()">Profile</a></li>
-                                <li><a href="#" onclick="">Settings</a></li>
-                                <li><a href="#" onclick="">Upgrade to Premium</a></li>
-                                <li><a href="#" onclick="">Profile</a></li>
-                                <li>
-                                    <a href="#" onclick="">
-                                        <form action="includes/logout.inc.php" method="post">
+                                <?php login_display() ?>
+                            </a>
+                            <a href="#"> <img src="spotifyimages/notificationicon.png" alt=""></a>
+                            <div class="user-image-container">
+                                <img src="spotifyimages/whiteprofile.png" alt="Hover Image">
+                                <ul class="user-options">
+                                    <li><a href="#" onclick="profileLoading()">Account</a></li>
+                                    <li><a href="#" onclick="">Settings</a></li>
+                                    <li><a href="#" onclick="">Upgrade to Premium</a></li>
+                                    <li><a href="#" onclick="">Profile</a></li>
+                                    <li>
+                                        <a href="#" onclick="">
+                                            <form action="includes/logout.inc.php" method="post">
 
-                                            <?php 
+                                                <?php 
                                 logout_display();
                                 ?>
-                                        </form>
+                                            </form>
 
-                                    </a>
-                                </li>
+                                        </a>
+                                    </li>
 
-                                <!-- <li><a href="#" onclick="">Log out</a></li> -->
-                            </ul>
-                        </div>
-                        <!-- <div>
+                                    <!-- <li><a href="#" onclick="">Log out</a></li> -->
+                                </ul>
+                            </div>
+                            <!-- <div>
                             <a href="#"> <img src="spotifyimages/whiteprofile.png" alt="" onclick="toggleNav()"></a>
 
                         </div> -->
-                    </div>
-                </nav>
-                <div class="recent-section">
-                    <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first20.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Darknet Diaries' )" alt="">
-                            <p>Darknet Diaries</p>
-                    </div>
-                    <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first12.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first12.jpg','48 Hours')">
-                            <p>48 Hours</p>
-                    </div>
-                    <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first13.jpg" alt="" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Afrikan Sauce' )">
-                            <p>Afrikan Sauce</p>
-                    </div>
-                    <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first12.jpg" alt="">
-                            <p>Daily mix 5</p>
-                    </div>
-                    <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first13.jpg" alt="">
-                            <p>Liked Songs</p>
-                    </div>
-                    <div class="recent-container">
-                        <a href="#"><img src="spotifyimages/first20.jpg" alt="">
-                            <p>Sam Fischer</p>
-                    </div>
-                </div>
-                <nav class="intro-page">
-                    <div>Your shows</div>
-                    <div id="show-all">Show all</div>
-                </nav>
-                <div class="image-container">
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">Darknet Diaries</a>
-                            <p>Jack Rhysider</p>
+                        </div>
+                    </nav>
+                    <div class="recent-section">
+                        <div class="recent-container">
+                            <a href="#"><img src="spotifyimages/first20.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Darknet Diaries' )" alt="">
+                                <p>Darknet Diaries</p>
+                        </div>
+                        <div class="recent-container">
+                            <a href="#"><img src="spotifyimages/first12.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first12.jpg','48 Hours')">
+                                <p>48 Hours</p>
+                        </div>
+                        <div class="recent-container">
+                            <a href="#"><img src="spotifyimages/first13.jpg" alt="" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Afrikan Sauce' )">
+                                <p>Afrikan Sauce</p>
+                        </div>
+                        <div class="recent-container">
+                            <a href="#"><img src="spotifyimages/first12.jpg" alt="">
+                                <p>Daily mix 5</p>
+                        </div>
+                        <div class="recent-container">
+                            <a href="#"><img src="spotifyimages/first13.jpg" alt="">
+                                <p>Liked Songs</p>
+                        </div>
+                        <div class="recent-container">
+                            <a href="#"><img src="spotifyimages/first20.jpg" alt="">
+                                <p>Sam Fischer</p>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">48 Hours</a>
-                            <p>CBS</p>
-                        </div>
-
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
-                        </div>
-
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image"><a href="#">Hacker mind</a>
-                            <p>Robert Vamosi</p>
-                        </div>
-
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image"><a href="#">Compiler </a>
-                            <p>Redhat</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="picked-for-you">
                     <nav class="intro-page">
-                        <div>Picked For You</div>
+                        <div>Your shows</div>
                         <div id="show-all">Show all</div>
                     </nav>
                     <div class="image-container">
@@ -227,177 +184,222 @@ require_once "includes/login_view.inc.php";
                                 <p>Jack Rhysider</p>
                             </div>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">48 Hours</a>
+                                <p>CBS</p>
+                            </div>
 
-                    </div>
-                </div>
-
-
-                <nav class="intro-page">
-                    <div>Recently played</div>
-                    <div id="show-all">Show all</div>
-                </nav>
-                <div class="image-container">
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">Darknet Diaries</a>
-                            <p>Jack Rhysider</p>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">48 Hours</a>
-                            <p>CBS</p>
-                        </div>
+                        <div class="container">
+                            <div class="avatar-image"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Daily mix 5</a>
-                            <p></p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image"></div>
+                            <div class="avatar-about-image"><a href="#">Hacker mind</a>
+                                <p>Robert Vamosi</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image"></div>
+                            <div class="avatar-about-image"><a href="#">Compiler </a>
+                                <p>Redhat</p>
+                            </div>
+
                         </div>
 
                     </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
-                        </div>
+                    <div class="picked-for-you">
+                        <nav class="intro-page">
+                            <div>Picked For You</div>
+                            <div id="show-all">Show all</div>
+                        </nav>
+                        <div class="image-container">
+                            <div class="container">
+                                <div class="avatar-image"></div>
+                                <div class="avatar-about-image">
+                                    <a href="#">Darknet Diaries</a>
+                                    <p>Jack Rhysider</p>
+                                </div>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
-                        </div>
 
-                    </div>
-                </div>
-                <nav class="intro-page">
-                    <div>Daily mix</div>
-                    <div id="show-all">Show all</div>
-                </nav>
-                <div class="image-container">
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">Darknet Diaries</a>
-                            <p>Jack Rhysider</p>
+                    <nav class="intro-page">
+                        <div>Recently played</div>
+                        <div id="show-all">Show all</div>
+                    </nav>
+                    <div class="image-container">
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">Darknet Diaries</a>
+                                <p>Jack Rhysider</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">48 Hours</a>
-                            <p>CBS</p>
-                        </div>
+                        <div class="container">
+                            <div class="avatar-image"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">48 Hours</a>
+                                <p>CBS</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Daily mix 5</a>
-                            <p></p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Daily mix 5</a>
+                                <p></p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image1"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                </div>
-                <nav class="intro-page">
-                    <div>Your favorite Artists</div>
-                    <div id="show-all">Show all</div>
-                </nav>
-                <div class="image-container">
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">Darknet Diaries</a>
-                            <p>Jack Rhysider</p>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image">
-                            <a href="#">48 Hours</a>
-                            <p>CBS</p>
+                    <nav class="intro-page">
+                        <div>Daily mix</div>
+                        <div id="show-all">Show all</div>
+                    </nav>
+                    <div class="image-container">
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">Darknet Diaries</a>
+                                <p>Jack Rhysider</p>
+                            </div>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">48 Hours</a>
+                                <p>CBS</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image"><a href="#">Daily mix 5</a>
-                            <p></p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Daily mix 5</a>
+                                <p></p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
-                    </div>
-                    <div class="container">
-                        <div class="avatar-image" id="image2"></div>
-                        <div class="avatar-about-image"><a href="#">Serial Killers</a>
-                            <p>Flixplay studios</p>
                         </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image1"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
 
+                        </div>
+                    </div>
+                    <nav class="intro-page">
+                        <div>Your favorite Artists</div>
+                        <div id="show-all">Show all</div>
+                    </nav>
+                    <div class="image-container">
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">Darknet Diaries</a>
+                                <p>Jack Rhysider</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image">
+                                <a href="#">48 Hours</a>
+                                <p>CBS</p>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image"><a href="#">Daily mix 5</a>
+                                <p></p>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
+
+                        </div>
+                        <div class="container">
+                            <div class="avatar-image" id="image2"></div>
+                            <div class="avatar-about-image"><a href="#">Serial Killers</a>
+                                <p>Flixplay studios</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <footer>
@@ -503,6 +505,7 @@ require_once "includes/login_view.inc.php";
 
             </div>
         </div>
+        <!-- the following section shows the currently playing song and the options that it presents -->
         <div class="desktop-footer">
             <div class="desktop-footer1">
                 <div class="playing-image"></div>
@@ -531,12 +534,28 @@ require_once "includes/login_view.inc.php";
 
     <!-- the following section shows the sections not included in the html body but when toggled -->
     <div class="dynamic-profile">
-        <div class="dynamic-profile1">
-            <div class="profile-image">the waalace iarnianaian cjjjwiorjwpoijcdi</div>
-            <div class="profile-name">nation state actor that is shown
-                <h1>destructive cuyber attack</h1>
+        <div class="dynamic-section1">
+            <nav class=" dynamic-nav-top">
+                <div class="dynamic1">
+                    <div class="dynamic-back-image" onclick="returnRightBody()"></div>
+                    <div class="dynamic-next-image"></div>
+                </div>
+                <div class="dynamic2">
+                    <div class="dynamic-explore-premium">Explore Premium</div>
+                    <div class="dynamic-profile-image"></div>
+                </div>
+            </nav>
+            <div class="sect2-dynamic-section1">
+                <div class="users-image-avatar">
+                </div>
+                <div class="dynamic-user-descripton">
+                    <a href="#">profile</a>
+                    <p id="dynamic-username">Clinton</p>
+                    <p>7 public playlists .4 following </p>
+                </div>
             </div>
         </div>
+    </div>
 
 
     </div>
@@ -545,5 +564,7 @@ require_once "includes/login_view.inc.php";
 <script src="javascript/main.js"></script>
 <script src="javascript/player.js"></script>
 <script src="javascript/playlists.js"></script>
+<script src="javascript\dynamicLoading.js"></script>
+
 
 </html>

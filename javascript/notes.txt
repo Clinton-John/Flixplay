@@ -6,3 +6,6 @@ likebutton.png
 options.png
 
 for the playlist section, create an array which is continuosly updated when the user adds a song to the playlist or when he or she likes the song. using a for each / for loop iterate on the elements in the array and in each element create a section that shows the songs and their descriptions in the section.// either using javascript as a frontend or using php the backend . the php backend is most prefered because the session generated ensures the session is maintained throughout
+
+move-next.png
+profile.png
