@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
        }
         
        create_user( $pdo,  $username,  $pwd , $email);
-        header("location: ../flixplay.html");
+        header("location: ../flixplay.php");
         die();
          
         $pdo = null;
@@ -55,6 +55,6 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
        }
 }else{
 
-     header("location:../flixplay.html");
+     header("location:../flixplay.php");
      die();
 }
