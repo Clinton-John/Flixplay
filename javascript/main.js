@@ -51,3 +51,10 @@ function returnRightBody() {
     window.location.href = 'flixplay.php';
 
 }
+
+// changing the background color of a page when a user hovers over a given class or id
+
+let hoverElement = document.querySelector(".recent-section");
+hoverElement.addEventListener('mouseover', function() {
+    hoverElement.style.background = 'linear-gradient(to bottom, yellow, red)';
+});

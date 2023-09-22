@@ -4,11 +4,14 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
     $username = $_POST["username"];
     $pwd = $_POST["password"];
     $email = $_POST["email"];
+    $playlistName = "texmex playlists";
 
        try {
         require_once 'dbh.inc.php';
         require_once 'signup_model.inc.php';
         require_once 'signup_control.inc.php';
+        require_once 'playlist_control.inc.php';
+        require_once 'playlist_model.inc.php';
 
         // ERROR HANDLER
         $errors=[];
@@ -45,6 +48,7 @@ if($_SERVER["REQUEST_METHOD"]=== "POST"){
        }
         
        create_user( $pdo,  $username,  $pwd , $email);
+       create_new_playlist( $pdo ,  $username , $playlistName);
         header("location: ../flixplay.php");
         die();
          

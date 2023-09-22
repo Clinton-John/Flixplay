@@ -162,7 +162,11 @@
             cursor: pointer;
             display: flex;
             flex-wrap: wrap;
+            /* transition: background 0.5s; */
         }
+        /* #recent-contaner1:hover+.recent-section {
+            background: linear-gradient(to bottom, #0000ff, red);
+        } */
         
         .recent-container {
             display: flex;

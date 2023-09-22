@@ -46,6 +46,14 @@ require_once "includes/extras_view.inc.php";
                             <div>
                                 <a href="#"><img src="spotifyimages/libraryicon.png" onclick="change_library_width()" alt="your library flixplay"> Your Library</a>
                             </div>
+                            <div class="user-image-container">
+                                <img src="spotifyimages/addPlaylist.png" alt="" >
+                                <ul class="user-options">
+                                        <li><a href="#" onclick="addPlaylist()">Add Playlist</a></li>
+                                        </li>
+
+                                    </ul>
+                            </div>
                             <!-- <div class="contain-all">
                                <div class="hover-image-text-container">
                                <img src="spotifyimages/addPlaylist.png" id="hover-image" alt="#">
@@ -96,6 +104,9 @@ require_once "includes/extras_view.inc.php";
                                     <img src="spotifyimages/playing.png" alt="">
                                 </div>
                             </div>
+                            <?php
+                            display_created_playlist();
+                            ?>
                             <div class="playlist-container">
                                 <div class="playlist-image"></div>
                                 <div class="playlist-name">
@@ -106,6 +117,11 @@ require_once "includes/extras_view.inc.php";
                                     <img src="spotifyimages/playing.png" alt="">
                                 </div>
                             </div>
+                            
+                                <?php
+                            create_playlist_onclick();
+                            ?>
+                            
 
                         </div>
                     </div>
@@ -161,7 +177,7 @@ require_once "includes/extras_view.inc.php";
                             </div>
                         </nav>
                         <div class="recent-section">
-                            <div class="recent-container">
+                            <div class="recent-container" id="recent-contaner1" >
                                 <a href="#"><img src="spotifyimages/first20.jpg" onclick="PlayManager.overallManager('flixplaysongs/Lil_Darkside.mp3', 'spotifyimages/first20.jpg', 'Darknet Diaries' )" alt="">
                                     <p>Darknet Diaries</p>
                             </div>

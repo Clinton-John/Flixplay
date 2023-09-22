@@ -41,6 +41,7 @@ function get_email(object $pdo, string $email){
    ];
   
    $hashedpwd = password_hash($pwd , PASSWORD_BCRYPT, $options);
+   
    $stmt->bindParam(":username", $username);
    $stmt->bindParam(":email", $email);
    $stmt->bindParam(":pwd", $hashedpwd);

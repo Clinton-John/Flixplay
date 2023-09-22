@@ -29,7 +29,14 @@
     transition: opacity 0.3s ease;
 }
 
-
-/* .hover-image-text-container:hover .hover-text {
+.hover-image-text-container:hover .hover-text {
     opacity: 1;
+}
+
+
+/* adding a functionality to on hover  that allows the recent section to the recents section  */
+
+
+/* #recent-contaner1:hover+.recent-section {
+    background: linear-gradient(to bottom, #0000ff, red);
 } */

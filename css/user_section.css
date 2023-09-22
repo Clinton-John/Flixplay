@@ -63,3 +63,10 @@
 .user-options a:hover {
     background-color: #a1a098;
 }
+
+
+/* the section below is dedicated for testing and immediately after the testing its deleted */
+
+.try-me {
+    color: red;
+}

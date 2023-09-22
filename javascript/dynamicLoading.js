@@ -6,3 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Function to create a new playlist will be executed.');
     });
 });
+
+// the setion is incharge of creating the new playlist on the javascript section
+
+function addPlaylist() {
+    const testColor = document.querySelector("#testingsection");
+    testColor.style.color = "red";
+}

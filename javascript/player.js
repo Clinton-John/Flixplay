@@ -46,5 +46,10 @@
        },
        playingManager: function() {
            // the section is incharge of managing the current playing song and setting the lyrics display on the screen
+       },
+       FunctioanlityManager: function() {
+           let recentConatiner = document.getElementById(recent - contaner1);
+           recentConatiner.style.cssText = "hover"
        }
+
    }
