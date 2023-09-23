@@ -1,6 +1,6 @@
 <?php
 
-// the model is incharge of communiacting to the databases and returning the output 
+// the model is incharge of communicating to the databases and returning the output 
 declare(strict_types=1);
 
 

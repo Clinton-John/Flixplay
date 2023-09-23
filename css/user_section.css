@@ -65,8 +65,30 @@
 }
 
 
-/* the section below is dedicated for testing and immediately after the testing its deleted */
+/* the section below is  for testing and immediately after the testing its deleted */
 
 .try-me {
     color: red;
+}
+
+
+/* the playlist section to create a new playlist on hte left side of the playlist */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#playlistResult {
+    margin-top: 20px;
+    font-weight: bold;
 }

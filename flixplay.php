@@ -31,6 +31,7 @@ require_once "includes/extras_view.inc.php";
         <script defer src="javascript/player.js"></script>
         <script defer src="javascript/playlists.js"></script>
         <script defer src="javascript/dynamicLoading.js"></script>
+        <script defer src="javascript/show.js"></script>
     </head>
 
     <body>
@@ -49,7 +50,7 @@ require_once "includes/extras_view.inc.php";
                             <div class="user-image-container">
                                 <img src="spotifyimages/addPlaylist.png" alt="" >
                                 <ul class="user-options">
-                                        <li><a href="#" onclick="addPlaylist()">Add Playlist</a></li>
+                                        <li><a href="#"  id="showFormBtn">Add Playlist</a></li>
                                         </li>
 
                                     </ul>
@@ -84,6 +85,17 @@ require_once "includes/extras_view.inc.php";
                             </div>
                         </nav>
                         <div class="playlist-recents">
+                              
+                        <div id="playlistFormContainer" style="display: none;">
+                             
+                        <form id="playlistForm"  action="includes/playlist.inc.php" method="post">
+                              <label for="playlistName" style="color:white;" >Enter Playlist Name:</label>
+                              <input type="text" id="playlistName" style="color:white;" name="playlistName" required>
+                              <button type="submit" style="color:white;">Submit</button>
+                             </form>
+                           </div>
+                           <div id="playlistResult"></div>
+
                             <div class="playlist-container">
                                 <div class="playlist-image" id="liked-image" onclick="LibraryManager.overallManager()"></div>
                                 <div class="playlist-name">
@@ -94,16 +106,9 @@ require_once "includes/extras_view.inc.php";
                                     <img src="spotifyimages/playing.png" alt="">
                                 </div>
                             </div>
-                            <div class="playlist-container">
-                                <div class="playlist-image"></div>
-                                <div class="playlist-name">
-                                    <p>Playlist 1</p>
-                                    <p id="song-number"></p>
-                                </div>
-                                <div class="playing-icon">
-                                    <img src="spotifyimages/playing.png" alt="">
-                                </div>
-                            </div>
+                              
+                            
+
                             <?php
                             display_created_playlist();
                             ?>
@@ -117,10 +122,6 @@ require_once "includes/extras_view.inc.php";
                                     <img src="spotifyimages/playing.png" alt="">
                                 </div>
                             </div>
-                            
-                                <?php
-                            create_playlist_onclick();
-                            ?>
                             
 
                         </div>
