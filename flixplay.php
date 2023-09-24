@@ -5,6 +5,8 @@ require_once "includes/signup_view.inc.php";
 
 require_once "includes/login_view.inc.php";
 require_once "includes/extras_view.inc.php";
+require_once "includes/playlist_view.inc.php";
+
 
 
 ?>
@@ -25,6 +27,7 @@ require_once "includes/extras_view.inc.php";
         <link rel="stylesheet" href="css/account_profile.css">
         <link rel="stylesheet" href="css/flixplay.css">
         <link rel="stylesheet" href="css/hovertext.css">
+        <link rel="stylesheet" href="css/phpfiles_styles.css">
 
                            <!-- the javascript file loading using the defer -->
         <script defer src="javascript/main.js"></script>
@@ -123,6 +126,9 @@ require_once "includes/extras_view.inc.php";
                                 </div>
                             </div>
                             
+                            <?php
+                            playlist_display();
+                            ?>
 
                         </div>
                     </div>

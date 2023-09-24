@@ -3,10 +3,13 @@
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $username = $_POST["username"];
+
+    require_once 'config_session.inc.php';
+    $_SESSION["username"] = $username;
+
     $pwd = $_POST["password"];
 
 
-       $_SESSION["username"] = $username;
     try {
         require_once 'dbh.inc.php';
         require_once 'login_model.inc.php';
@@ -47,6 +50,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           $_SESSION["last-regeneration"]= time();
 
           header("location: ../flixplay.php?login=success");
+          
            $pdo = null;
           $stmt = null;
           die();
