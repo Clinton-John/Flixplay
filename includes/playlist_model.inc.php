@@ -22,10 +22,27 @@ function display_users_playlist( object $pdo , $username){
   $playlistResults = [];
 
   while($row= $stmt->fetch(PDO::FETCH_ASSOC)){
-     $playlistResults = $row["playlist_name"];
+     $playlistResults[] = $row["playlist_name"];
   }
 
   return $playlistResults;
 
 
 }
+
+/*
+function display_users_playlist( object $pdo , $username){
+  $query = "SELECT  playlist_name from playlists where username=:username;;";
+  $stmt= $pdo->prepare($query);
+
+  $stmt->bindParam(":username" , $username);
+  $stmt->execute();
+
+  $playlistResults = $stmt->fetch(PDO::FETCH_ASSOC);
+
+ 
+
+  return $playlistResults;
+
+
+}*/

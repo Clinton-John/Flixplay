@@ -93,42 +93,18 @@ require_once "includes/playlist_view.inc.php";
                              
                         <form id="playlistForm"  action="includes/playlist.inc.php" method="post">
                               <label for="playlistName" style="color:white;" >Enter Playlist Name:</label>
-                              <input type="text" id="playlistName" style="color:white;" name="playlistName" required>
+                              <input type="text" id="playlistNameInput" style="color:white;" name="playlistName" required>
                               <button type="submit" style="color:white;">Submit</button>
                              </form>
                            </div>
                            <div id="playlistResult"></div>
 
-                            <div class="playlist-container">
-                                <div class="playlist-image" id="liked-image" onclick="LibraryManager.overallManager()"></div>
-                                <div class="playlist-name">
-                                    <p>Liked Songs</p>
-                                    <p id="song-number">15 Songs</p>
-                                </div>
-                                <div class="playing-icon">
-                                    <img src="spotifyimages/playing.png" alt="">
-                                </div>
-                            </div>
-                              
-                            
-
-                            <?php
-                            display_created_playlist();
-                            ?>
-                            <div class="playlist-container">
-                                <div class="playlist-image"></div>
-                                <div class="playlist-name">
-                                    <p>Playlist 2</p>
-                                    <p id="song-number"></p>
-                                </div>
-                                <div class="playing-icon">
-                                    <img src="spotifyimages/playing.png" alt="">
-                                </div>
-                            </div>
-                            
-                            <?php
+                           <?php
                             playlist_display();
                             ?>
+                           
+                            
+                            
 
                         </div>
                     </div>

@@ -72,23 +72,38 @@
 }
 
 
-/* the playlist section to create a new playlist on hte left side of the playlist */
+/* the playlist section to create a new playlist on the left side of the playlist */
 
-form {
+#playlistForm {
+    display: flex;
+}
+
+#playlistNameInput {
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: #333;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+
+/* form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-}
+} */
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    color: #fff;
     margin-bottom: 10px;
-}
-
-#playlistResult {
-    margin-top: 20px;
-    font-weight: bold;
+    color: #333;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
 }

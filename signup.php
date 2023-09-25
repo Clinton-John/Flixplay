@@ -22,11 +22,7 @@ require_once "includes/login_view.inc.php";
 <body>
 
     <section class="wrapper">
-        <h3>
-            <?php
-            output_username();
-            ?>
-        </h3>
+        
         <div class="form_signup">
             <header>Signup</header>
             
