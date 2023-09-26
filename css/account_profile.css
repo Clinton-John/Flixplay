@@ -83,3 +83,13 @@
 .try-me {
     color: red;
 }
+
+
+/* the search section incharge of the right hand section when search button is clicked */
+
+.search-page {
+    visibility: hidden;
+    display: none;
+    color: #fff;
+    padding-bottom: 30px;
+}

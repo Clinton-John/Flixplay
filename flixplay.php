@@ -34,6 +34,7 @@ require_once "includes/playlist_view.inc.php";
         <script defer src="javascript/player.js"></script>
         <script defer src="javascript/playlists.js"></script>
         <script defer src="javascript/dynamicLoading.js"></script>
+        <script defer src="javascript/ajaxloading.js"></script>
         <script defer src="javascript/show.js"></script>
     </head>
 
@@ -43,7 +44,7 @@ require_once "includes/playlist_view.inc.php";
                 <div class="left-body">
                     <div class="left-body1">
                         <a href="#"><img src="spotifyimages/home.png">Home</a>
-                        <a href="#"><img src="spotifyimages/searchicon.png">Search</a>
+                        <a href="#" onclick="searchLoading()" ><img src="spotifyimages/searchicon.png" onclick="searchLoading()" id="leftSearch"  >Search</a>
                     </div>
                     <div class="left-body2">
                         <nav class="left-body2-nav">
@@ -58,17 +59,7 @@ require_once "includes/playlist_view.inc.php";
 
                                     </ul>
                             </div>
-                            <!-- <div class="contain-all">
-                               <div class="hover-image-text-container">
-                               <img src="spotifyimages/addPlaylist.png" id="hover-image" alt="#">
-                                <div class="hover-text">Create playlist</div>
-                               </div> 
-                                
-                               <div class="hover-image-text-container">
-                               <img src="spotifyimages/addPlaylist.png" id="hover-image" alt="#">
-                                <div class="hover-text">Show more</div>
-                               </div> 
-                            </div> -->
+                           
                         </nav>
                         <nav class="left-body2-nav2">
                             <a href="#">Playlist</a>
@@ -89,6 +80,10 @@ require_once "includes/playlist_view.inc.php";
                         </nav>
                         <div class="playlist-recents">
                               
+                        <div >
+                          <a href="signup.php" id="testmeout">TEST me OUT</a> 
+                    </div>
+
                         <div id="playlistFormContainer" style="display: none;">
                              
                         <form id="playlistForm"  action="includes/playlist.inc.php" method="post">
@@ -102,9 +97,6 @@ require_once "includes/playlist_view.inc.php";
                            <?php
                             playlist_display();
                             ?>
-                           
-                            
-                            
 
                         </div>
                     </div>
@@ -119,6 +111,8 @@ require_once "includes/playlist_view.inc.php";
                         <a href="#" onclick="spotifyPremium()"><img src="spotifyimages/playlogo.png">Premium</a>
 
                     </nav>
+
+                   
                 </div>
                 <div class="right-body">
                     <div class="content-right-body">
@@ -565,13 +559,17 @@ require_once "includes/playlist_view.inc.php";
                         <a href="#">profile</a>
                         <p id="dynamic-username">
                             <?php 
-                                display_users_username()
+                                display_users_username();
                                ?>
                         </p>
-                        <p>7 public playlists .4 following </p>
+                        <p> <?php  playlist_display_numbers() ?> </p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class= "search-page">
+  <h1> hello this is the search section that we are about to exeprience in a few moment</h1>
         </div>
 
 

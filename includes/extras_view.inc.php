@@ -12,6 +12,8 @@ if (isset($_SESSION["user_id"])) {
 }
 
 
-
+function display_users_playlist_number(){
+    
+}
 
 

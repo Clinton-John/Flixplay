@@ -45,10 +45,20 @@ function profileLoading() {
     rightBody.innerHTML = dynamicProfile;
 }
 
+function searchLoading() {
+    const rightBody = document.querySelector(".content-right-body");
+    const SearchPage = document.querySelector(".dynamic-profile").innerHTML;
+
+    rightBody.innerHTML = SearchPage;
+}
+
 function returnRightBody() {
 
+    const rightBodyContent = document.querySelector(".content-right-body").innerHTML;
 
-    window.location.href = 'flixplay.php';
+    rightBody.innerHTML = rightBodyContent;
+
+    // window.location.href = 'flixplay.php';
 
 }
 
