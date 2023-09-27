@@ -82,6 +82,8 @@ require_once "includes/playlist_view.inc.php";
                               
                         <div >
                           <a href="signup.php" id="testmeout">TEST me OUT</a> 
+                             <div id="signup-content"></div>
+
                     </div>
 
                         <div id="playlistFormContainer" style="display: none;">
